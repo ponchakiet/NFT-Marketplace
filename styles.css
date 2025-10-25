@@ -99,7 +99,7 @@ h6 {
 }
 
 .btn:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .btn.btn-primary {
@@ -126,6 +126,95 @@ h6 {
 
 .section {
   padding: 80px 0;
+}
+
+.section-hero .section-heading {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.hero-info,
+.hero-media {
+  flex: 1;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-hero .section-title {
+  font-size: 67px;
+  line-height: 110.00000000000001%;
+}
+
+.section-hero .section-subtitle {
+  margin-top: 20px;
+}
+
+.hero-achieve-list {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-achieve-item {
+  width: calc((100% - 60px) / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-achieve-item span:first-child {
+  font-family: var(--font-secondary);
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-achieve-item span:last-child {
+  font-size: 23.99px;
+  line-height: 1.6;
+}
+
+.hero-media {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-media .nft-info {
+  background-color: var(--color-gray-400);
+  padding: 22px 20px;
+}
+
+.nft-info-title {
+  font-size: 22px;
+  font-weight: var(--font-weight-semi);
+}
+
+.nft-info-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.section-heading:has(.section-btn) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 38px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  margin-top: 10px;
+  font-size: 22px;
+  line-height: 1.6;
+  text-transform: capitalize;
 }
 
 .header {
@@ -165,7 +254,11 @@ h6 {
 }
 
 .menu-link:hover::after {
-    width: calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
+.logo {
+  width: 244px;
 }
 
 .creator-list {
@@ -230,3 +323,12 @@ h6 {
 .creator-sales .label {
   color: var(--color-gray-300);
 }
+
+/* Reponsive web design */
+
+/* Break point */
+
+/* desktop: 1920px */
+/* laptop: 1280px */
+/* tablet: 1024px */
+/* mobile: 768px */

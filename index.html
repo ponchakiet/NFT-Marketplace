@@ -15,10 +15,9 @@
     <div class="wrap">
       <header>
         <div class="header">
-          <a href="index.html">
+          <a href="index.html" class="Logo">
             <img src="./image/Logo.png" alt="NFT Marketplace" />
           </a>
-
           <nav class="nav">
             <ul class="menu-list">
               <li class="menu-item">
@@ -31,7 +30,6 @@
                 <a href="#" class="menu-link">Connect a wallet</a>
               </li>
             </ul>
-
             <button type="button" class="btn btn-primary btn-small">
               <span class="btn-icon"
                 ><img src="./image/icon_user.png" alt=""
@@ -42,13 +40,74 @@
         </div>
       </header>
       <main>
+        <section class="section section-hero">
+          <div class="container">
+            <div class="section-heading">
+              <div class="hero-info">
+                <div>
+                  <h2 class="section-title">
+                    Discover digital art & Collect NFTs
+                  </h2>
+                  <p class="section-subtitle">
+                    NFT marketplace UI created with Anima for Figma. Collect,
+                    buy and sell art from more than 20k NFT artists.
+                  </p>
+                </div>
+                <div class="hero-btn">
+                  <button type="button" class="btn btn-primary">
+                    <span class="btn-icon">
+                      <img src="./image/RocketLaunchWhite.png" alt="" />
+                    </span>
+                    Get Started
+                  </button>
+                </div>
+                <div class="hero-achieve-list">
+                  <div class="hero-achieve-item">
+                    <span>240k+</span>
+                    <span>Total Sale</span>
+                  </div>
+                  <div class="hero-achieve-item">
+                    <span>100k++</span>
+                    <span>Auctions</span>
+                  </div>
+                  <div class="hero-achieve-item">
+                    <span>240k+</span>
+                    <span>Artists</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-media">
+                <div class="hero-media-img">
+                  <img src="/image/img_placeholder.png" alt="">
+                </div>
+                <div class="nft-info">
+                  <h3 class="nft-info-title">Space Walking</h3>
+                  <div class="nft-info-box">
+                    <img src="./image/Avatar.png" alt="">
+                    <span>Animakid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="section section-creators">
           <div class="container">
             <div class="section-heading">
-              <h2 class="section-title">Top creators</h2>
-              <p class="section-subtitle">
-                Checkout Top Rated Creators on the NFT Marketplace
-              </p>
+              <div>
+                <h2 class="section-title">Top creators</h2>
+                <p class="section-subtitle">
+                  Checkout Top Rated Creators on the NFT Marketplace
+                </p>
+              </div>
+              <div class="section-btn">
+                <button type="button" class="btn btn-outline">
+                  <span class="btn-icon">
+                    <img src="./image/RocketLaunch.png" alt="" />
+                  </span>
+                  View Rankings
+                </button>
+              </div>
             </div>
 
             <ul class="creator-list">
@@ -314,5 +373,20 @@
       </main>
       <footer>Footer</footer>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav");
+
+      menuBtn.addEventListener("click", function () {
+        nav.classList.add("is-open");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!nav.contains(event.target) && !menuBtn.contains(event.target)) {
+          nav.classList.remove("is-open");
+        }
+      });
+    </script>
   </body>
 </html>

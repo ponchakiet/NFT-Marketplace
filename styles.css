@@ -119,6 +119,11 @@ h6 {
   border-color: var(--color-primary);
 }
 
+.btn.btn-trending {
+  padding: 32.5px 15px;
+  line-height: 1.6;
+}
+
 .btn-icon {
   width: 20px;
   height: 20px;
@@ -229,6 +234,10 @@ h6 {
   gap: 10px;
 }
 
+.list {
+  margin-top: 60px;
+}
+
 .menu-list {
   display: flex;
   align-items: center;
@@ -261,11 +270,34 @@ h6 {
   width: 244px;
 }
 
+.trending-list {
+  display: flex;
+  gap: 30px;
+}
+
+.trending-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: calc((100% - 60px) / 3);
+}
+
+.trending-item-secondary {
+  display: flex;
+  gap: 15px;
+  width: calc((100% - 30px) / 3);
+}
+
+.trending-item-btn {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+}
+
 .creator-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 60px;
 }
 
 .creator-item {

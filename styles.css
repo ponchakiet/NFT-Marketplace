@@ -213,6 +213,7 @@ h6 {
   font-size: 38px;
   line-height: 1.2;
   text-transform: capitalize;
+  font-weight: var(--font-weight-semi);
 }
 
 .section-subtitle {
@@ -318,6 +319,7 @@ h6 {
   width: 120px;
   height: 120px;
   border-radius: 999px;
+  overflow: hidden;
 }
 
 .creator-info {
@@ -348,12 +350,84 @@ h6 {
   gap: 10px;
 }
 
-.creator-sales .coin {
+.coin {
   font-family: var(--font-secondary);
 }
 
-.creator-sales .label {
+.label {
   color: var(--color-gray-300);
+}
+
+.category-item {
+  position: relative;
+}
+
+.category-card {
+  background-color: var(--color-gray-400);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.category-img-icon {
+  background: #ffffff1a;
+  backdrop-filter: blur(7.5px);
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.category-title {
+  padding: 20px 30px 25px;
+  font-size: 22px;
+  font-weight: var(--font-weight-semi);
+}
+
+.nfts-item {
+  width: calc((100% - 60px) / 3);
+  background-color: var(--color-gray-400);
+  border-radius: 20px;
+}
+
+.nfts-content {
+  padding: 20px 30px 25px;
+}
+
+.nfts-info {
+  margin-bottom: 25px;
+}
+
+.nfts-info .nft-info-box {
+  margin-top: 5px;
+}
+
+.nfts-price-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nfts-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nfts-price .label {
+  font-size: 12px;
+  line-height: 110.00000000000001%;
+}
+
+.nfts-price .coin {
+  font-family: var(--font-secondary);
+}
+
+.right {
+  text-align: right;
 }
 
 /* Reponsive web design */

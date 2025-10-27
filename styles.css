@@ -371,8 +371,8 @@ h6 {
 .category-img-icon {
   background: #ffffff1a;
   backdrop-filter: blur(7.5px);
-  width: 240px;
-  height: 240px;
+  width: 100%;
+  padding: 70px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -408,13 +408,13 @@ h6 {
 
 .nfts-price-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .nfts-price {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
 }
 
 .nfts-price .label {
@@ -427,7 +427,105 @@ h6 {
 }
 
 .right {
-  text-align: right;
+  align-items: flex-end;
+}
+
+.section-mashroom {
+  padding: 0 0 60px;
+  position: relative;
+  height: 640px;
+  background-image: url(./image/img_mashroom/img_mashroom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-mashroom::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+  content: "";
+}
+
+.mashroom-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.mashroom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mashroom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.mashroom-content .nft-info-box {
+  margin-top: 0;
+  padding: 10px 20px;
+  background-color: var(--color-gray-400);
+  border-radius: 20px;
+}
+
+.mashroom-title {
+  font-weight: var(--font-weight-semi);
+  font-size: 51px;
+  line-height: 110.00000000000001%;
+}
+
+.mashroom-timer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  background: #3B3B3B80;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+.mashroom-timer .label {
+  color: var(--color-white);
+}
+
+.mashroom-hours {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.mashroom-hours > p {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: 28px;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hours span:first-child {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.hours span:last-child {
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  line-height: 110.00000000000001%;
 }
 
 .work-item {

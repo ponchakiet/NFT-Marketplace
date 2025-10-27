@@ -430,6 +430,63 @@ h6 {
   text-align: right;
 }
 
+.work-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.work-card {
+  padding: 10px 30px 30px;
+  height: 100%;
+}
+
+.work-card-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.word-card-title {
+  font-size: 22px;
+  font-weight: var(--font-weight-semi);
+}
+
+.work-card-content {
+  margin-top: 10px;
+}
+
+.join-item {
+  display: flex;
+  padding: 60px;
+  gap: 80px;
+  background-color: var(--color-gray-400);
+  border-radius: 20px;
+  align-items: center;
+}
+
+.join-img,
+.join-content {
+  flex: 1;
+}
+
+.join-mail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.input {
+  padding: 21px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.btn.btn-mail {
+  padding-left: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 /* Reponsive web design */
 
 /* Break point */
